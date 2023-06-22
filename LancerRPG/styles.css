@@ -11,6 +11,26 @@
   border: 2px dashed #ccc;
 }
 
+.drop-zone.top-left {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.drop-zone.top-right {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.drop-zone.bottom-left {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.drop-zone.bottom-right {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
 .drop-zone.drag-over {
   border-color: #ff0000;
   background-color: #f9f9f9;
