@@ -1,41 +1,16 @@
-.card {
-  width: 200px;
-  height: 200px;
-  background-color: #f1f1f1;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 10px;
-  cursor: move;
-}
-
 .drop-zone {
   width: 50%;
   height: 50%;
   border: 2px dashed #ccc;
 }
 
-#top-left {
-  grid-area: top-left;
+.drop-zone.drag-over {
+  border-color: #ff0000;
+  background-color: #f9f9f9;
 }
 
-#top-right {
-  grid-area: top-right;
-}
-
-#bottom-left {
-  grid-area: bottom-left;
-}
-
-#bottom-right {
-  grid-area: bottom-right;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "top-left top-right"
-    "bottom-left bottom-right";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  height: 100vh;
+.card {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin: 5px;
 }
