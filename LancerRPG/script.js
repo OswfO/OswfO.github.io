@@ -46,11 +46,12 @@ function drop(e) {
   const card = document.getElementById(cardId);
   if (card && card !== draggedCard) {
     const dropZone = e.target;
-    // Detach the card from its current parent
-    card.parentNode.removeChild(card);
+    // Detach the card being dragged from its current parent
+    draggedCard.parentNode.removeChild(draggedCard);
     // Append the card to the new drop zone
     dropZone.appendChild(card);
   }
 }
+
 
 }
