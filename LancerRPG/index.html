@@ -1,27 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lancer RPG Chatacter Sheet</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to My Web Page</h1>
+  <header>
+    <h1>LancerRPG Character Sheet</h1>
+  </header>
   
-  <div class="grid-container">
-    <div class="drop-zone top-left"></div>
-    <div class="drop-zone top-right"></div>
-    <div class="drop-zone bottom-left"></div>
-    <div class="drop-zone bottom-right"></div>
-  </div>
-  <div class="card" draggable="true">
-    <h3>Card 1</h3>
-    <p>Card content goes here...</p>
+  <div class="container">
+    <div class="column">
+      <div class="card">
+        <div class="ribbon">
+          <span>Card 1</span>
+        </div>
+        <textarea class="editable-textarea" placeholder="Enter text"></textarea>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="ribbon">
+          <span>Card 2</span>
+        </div>
+        <textarea class="editable-textarea" placeholder="Enter text"></textarea>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="ribbon">
+          <span>Card 3</span>
+        </div>
+        <textarea class="editable-textarea" placeholder="Enter text"></textarea>
+      </div>
+    </div>
   </div>
 
-
-  
   <script src="script.js"></script>
 </body>
 </html>
