@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LancerRPG Character Sheet</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.13.0/Sortable.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
   <header>
     <h1>LancerRPG Character Sheet</h1>
   </header>
-
-
+  <div class="container">
+    <div id="columns" class="row">
+      <div class="col">
+        <div class="card my-2" id="card1">
+          <div class="ribbon"><span>Card 1</span></div>
+          <textarea class="card-body"></textarea>
+        </div>
+        <!-- Add more cards here -->
+      </div>
+      <div class="col">
+        <div class="card my-2" id="card2">
+          <div class="ribbon"><span>Card 2</span></div>
+          <textarea class="card-body"></textarea>
+        </div>
+        <!-- Add more cards here -->
+      </div>
+      <div class="col">
+        <div class="card my-2" id="card3">
+          <div class="ribbon"><span>Card 3</span></div>
+          <textarea class="card-body"></textarea>
+        </div>
+        <!-- Add more cards here -->
+      </div>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
